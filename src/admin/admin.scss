@@ -1,0 +1,160 @@
+$webyx-primary-color: #9933CC;
+$webyx-primary-color-hover: #bf3fff;
+$webyx-prefix: webyx-fg-;
+##{$webyx-prefix}settings {
+  .#{$webyx-prefix}save-settings-btn {
+    background-color: $webyx-primary-color;
+    box-shadow: unset;
+    &:hover {
+      background-color: $webyx-primary-color-hover;
+    }
+  }
+  .components-placeholder {
+    background: #f1f1f1;
+  }
+  .#{$webyx-prefix}header {
+    background-color: #c859ff;
+    box-shadow: 0 1px 0 rgba(213, 213, 213, .5), 0 1px 2px #eeeeee;
+    margin-left: -2em;
+    .#{$webyx-prefix}container {
+      margin: 0 auto;
+      max-width: 750px;
+      .#{$webyx-prefix}title {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        .#{$webyx-prefix}icon-webyx {
+          margin-left: 0;
+          margin-right: 12px;
+          height: 40px;
+          width: 40px;
+          color: white;
+          fill: white;
+        }
+        h1 {
+          color: white;
+        }
+      }
+    }
+  }
+  .#{$webyx-prefix}main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+    .components-panel {
+      background: none;
+      border: none;
+    }
+    .components-panel__body-toggle.components-button:focus {
+      box-shadow:  inset 0 0 0 2px $webyx-primary-color; 
+    }
+    .components-form-toggle.is-checked .components-form-toggle__track {
+      color: #fff;
+      background-color: $webyx-primary-color;
+      border-color: $webyx-primary-color;
+    }
+    .components-form-toggle .components-form-toggle__input:focus+.components-form-toggle__track {
+      box-shadow:  0 0 0 2px #fff, 0 0 0 4px $webyx-primary-color; 
+    }
+    .components-form-toggle.is-checked .components-form-toggle__thumb {
+      background-color: #fff;
+      border-color: $webyx-primary-color;
+    }
+    .components-form-toggle.is-checked .components-form-toggle__track {
+      background-color: $webyx-primary-color; 
+      border-color: $webyx-primary-color; 
+    }
+    .components-form-toggle .components-form-toggle__thumb {
+      background-color: $webyx-primary-color;
+      border-color: $webyx-primary-color;
+    }
+    .components-form-toggle .components-form-toggle__track {
+      background-color: #fff;
+      border-color: $webyx-primary-color;
+    }
+    .components-panel__body {
+      background: #ffffff;
+      border: 1px solid #e2e4e7;
+      margin: 1rem 0;
+    }
+  }
+  .components-base-control__help {
+    margin-top: .5rem;
+  }
+  .components-panel__row {
+    > div {
+      flex-grow: 1;
+      margin-right: 1rem;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+  .#{$webyx-prefix}notices {
+    .components-snackbar {
+      bottom: .5rem;
+      position: fixed;
+    }
+  }
+}
+.#{$webyx-prefix}spinner-front-page {
+  position: absolute;
+  top: 50vh;
+  left: 50%;
+  background-color: #c859ff;
+  z-index: 999999;
+  .#{$webyx-prefix}logo-container {
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -75px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: white;
+    .#{$webyx-prefix}logo-icon {
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      top: 50%;
+      left: 50%;
+      margin-top: -60px;
+      margin-left: -60px;
+      svg {
+        fill:#9933CC;
+      }
+    }
+  }
+  .#{$webyx-prefix}txt-loader {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    margin-top: 70px;
+    margin-left: -55px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #aaaaaa;
+  }
+}
+.#{$webyx-prefix}circ-front-page {
+  height: 100%;
+  width: 100%;
+  color: #3232324d;
+  position: relative;
+  top: -4px;
+  left: -4px;
+  display: inline-block;
+  border: 4px solid;
+  border-radius: 50%;
+  border-right-color: rgba(153, 51, 204, 1);
+  animation: #{$webyx-prefix}rotate 1s linear infinite; 
+}
+@keyframes #{$webyx-prefix}rotate {
+  0% {
+    transform: rotate(0); 
+  }
+  100% {
+    transform: rotate(360deg); 
+  } 
+}

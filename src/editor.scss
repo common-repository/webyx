@@ -1,0 +1,244 @@
+$webyx-primary-color        : #9933CC;
+$webyx-secondary-color      : white;
+$webyx-primary-color-hover  : #bf3fff;
+$webyx-primary-icon-color   : #8E8E8E;
+$webyx-secondary-color-dirty: #F3F2F2;
+@import './webyx-wrapper/editor.scss';
+@import './webyx-section/editor.scss';
+@import './webyx-slide/editor.scss';
+#webyx-fg-controls {
+  .components-base-control {
+    width: 100%;
+  }
+  .wp-block-webyx-fg-webyx-wrapper-group {
+    margin-top: 8px;
+  }
+  .components-select-control__input {
+    line-height: unset;
+  }
+  .webyx-btn {
+    color: black;
+    border: 1px solid $webyx-primary-color;
+    &:focus {
+      box-shadow: 0 0 0 1px $webyx-primary-color;
+    }
+  }
+  .components-button:hover {
+    color: $webyx-primary-color;
+  }
+  .components-panel__body-toggle.components-button:focus {
+    box-shadow:  inset 0 0 0 2px $webyx-primary-color; 
+  }
+  .components-color-picker__body {
+    padding: 16px 8px 6px 0px; 
+  }
+  .components-color-picker__inputs-wrapper {
+    align-items: normal;
+  }
+  .components-panel__row label  {
+    max-width: unset;
+  }
+  .webyx-pickcolor-label-wrapper {
+    height: 30px;
+    margin-bottom: 15px;
+  }
+  .webyx-pickcolor-label {
+    margin-bottom: 5px;
+    float: left;
+    line-height: 30px;
+  }
+  .webyx-pickcolor-color-sample {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    float: right;
+    position: relative;
+    .webyx-pickcolor-color-sample-background-opacity {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 100%; 
+      height: 100%; 
+      border-radius: 100%;
+      background-image: linear-gradient(45deg,#ddd 25%,transparent 0),linear-gradient(-45deg,#ddd 25%,transparent 0),linear-gradient(45deg,transparent 75%,#ddd 0),linear-gradient(-45deg,transparent 75%,#ddd 0);
+      background-size: 10px 10px;
+      background-position: 0 0,0 5px,5px -5px,-5px 0;
+    }
+  }
+  .components-text-control__input {
+    border-color: $webyx-primary-color;
+  }
+  .components-text-control__input:focus, .components-text-control__input:focus:after {
+    border-color: $webyx-primary-color;
+    box-shadow: 0 0 0 1px $webyx-primary-color;
+  }
+  .components-select-control__input:focus {
+    box-shadow: 0 0 0 1px $webyx-primary-color !important;
+  }
+  .components-input-control__backdrop {
+    box-shadow: 0 0 0 0px $webyx-primary-color !important;
+  }
+  .components-button.has-icon.has-text {
+    color: black;
+    width: 100%;
+    margin-right: 15px;
+    box-shadow: inset 0 0 0 1px $webyx-primary-color;
+    &:hover {
+      color: $webyx-primary-color;
+    }
+  }
+  .components-button.has-icon {
+    color: black;
+    justify-content: unset;
+    box-shadow: inset 0 0 0 1px $webyx-primary-color;
+    &:hover {
+      color: $webyx-primary-color-hover;
+    }
+  }
+  .components-color-picker__inputs-toggle-wrapper {
+    margin-top: 27px;
+  }
+  .components-form-toggle.is-checked .components-form-toggle__track {
+    color: #fff;
+    background-color: $webyx-primary-color;
+    border-color: $webyx-primary-color;
+  }
+  .components-form-toggle .components-form-toggle__input:focus+.components-form-toggle__track {
+    box-shadow:  0 0 0 2px #fff, 0 0 0 4px $webyx-primary-color; 
+  }
+  .components-form-toggle.is-checked .components-form-toggle__thumb {
+    background-color: #fff;
+    border-color: $webyx-primary-color;
+  }
+  .components-form-toggle.is-checked .components-form-toggle__track {
+    background-color: $webyx-primary-color; 
+    border-color: $webyx-primary-color; 
+  }
+  .components-form-toggle .components-form-toggle__thumb {
+    background-color: $webyx-primary-color;
+    border-color: $webyx-primary-color;
+  }
+  .components-form-toggle .components-form-toggle__track {
+    background-color: #fff;
+    border-color: $webyx-primary-color; 
+  }
+  .components-input-control__backdrop {
+    border-color: $webyx-primary-color;
+    border-width: 1px;
+    color:  unset;
+    box-shadow: unset;
+  }
+  .webyx-fg-info-txt {
+    padding-bottom: 20px;
+    font-size: 12px;
+    font-style: italic;
+    color: rgb(117, 117, 117);
+  }
+  .webyx-fg-info-file-name {
+    font-size: 12px;
+    font-style: normal;
+    color: rgb(117, 117, 117);
+  }
+  .webyx-slide-easings-tab-panel {
+    .webyx-active-tab {
+      background-color: #f0f0f0;
+      -webkit-box-shadow: 0 2px 0px 0px $webyx-primary-color;
+         -moz-box-shadow: 0 2px 0px 0px $webyx-primary-color;
+              box-shadow: 0 2px 0px 0px $webyx-primary-color;
+    }
+    .webyx-slide-tab-vertical, .webyx-slide-tab-horizontal {
+      color: $webyx-primary-color;
+      border: 1px solid #f0f0f0;
+      width: 50%;
+      display: inline-block;
+      margin-bottom: 20px;
+      &:focus {
+        -webkit-box-shadow: 0 2px 0px 0px $webyx-primary-color;
+           -moz-box-shadow: 0 2px 0px 0px $webyx-primary-color;
+                box-shadow: 0 2px 0px 0px $webyx-primary-color;
+      }
+    }
+    
+  }
+  .webyx-fg-doc {
+    color: #9933CC;
+    width: 100%;
+    text-align: center;
+    .webyx-fg-doc-link {
+      color: #9933CC;
+    }
+  }
+  .webyx-fg-gif {
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin: auto;
+  }
+  .components-range-control__root {
+    color: $webyx-primary-color;
+    .components-range-control__track {
+      color: $webyx-primary-color;
+    }
+    .components-range-control__wrapper {
+      input.components-range-control__slider ~ span > span {
+        background-color: #9933CC;
+        &::before {
+          background-color: #9933CC;
+          color: #9933CC;
+          border-color: #9933CC;
+        }
+      }
+    }
+  }
+}
+.components-modal__content .webyx-btn-modal { 
+  color: black;
+  margin-top: 20px;
+  border: 1px solid $webyx-primary-color;
+  &:focus {
+    box-shadow: 0 0 0 1px $webyx-primary-color-hover;
+  }
+  &:hover {
+    color:$webyx-primary-color-hover;
+  }
+}
+.components-button[aria-label="Webyx for Gutenberg"]:hover {
+  color: $webyx-primary-color;
+}
+.wp-block-webyx-fg-webyx-wrapper.is-highlighted:after, .wp-block-webyx-fg-webyx-slide.is-highlighted:after {
+  box-shadow: 0 0 0 2px $webyx-primary-color !important;
+}
+#webyx-toolabar-group-alignment {
+  .webyx-prm-color:hover {
+    color: $webyx-primary-color-hover;
+  }
+  .webyx-prm-color:focus:before {
+    box-shadow:  0 0 0 2px $webyx-primary-color-hover; 
+  }
+}
+.custom-css {
+  .components-textarea-control__input {
+    border-color: $webyx-primary-color;
+  }
+  .components-textarea-control__input:focus {
+    box-shadow:  0 0 0 1px $webyx-primary-color-hover;
+    border-color: $webyx-primary-color;
+  }
+  .components-button {
+    color: $webyx-primary-color;
+  }
+  .components-button:hover {
+    color: $webyx-primary-color-hover;
+  }
+}
+.alignfull {
+  margin-left: calc( -100vw / 2 + 100% / 2 );
+  margin-right: calc( -100vw / 2 + 100% / 2 );
+  max-width: 100vw;
+}
+.alignwide {
+  max-width: 1240px;
+}
